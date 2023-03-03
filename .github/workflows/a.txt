@@ -1,0 +1,28 @@
+name: hello-world
+on: push 
+#on: [push,workflow_dispatch] //manuall 
+jobs:
+  first:
+     runs-on: self-hosted 
+     steps:
+      - name: install apache2 server 
+        run: sudo apt install apache2 -y
+  second:
+     needs: first 
+     # depend on first job 
+     runs-on: self-hosted
+     steps:
+      - name: install nginx
+        run: sudo apt install nginx -y 
+      - name: upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist-files
+          # path /var/www/html/  // singal artifact folder and below the multi artifact  
+
+          path: |
+              /var/www/html
+              /var/
+
+            
+
