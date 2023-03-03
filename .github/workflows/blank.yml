@@ -6,3 +6,5 @@ jobs:
     steps:
       - name: my-step
         run: echo "Hello World!"
+      - name: create file
+        run: touch a{1..100}.txt
