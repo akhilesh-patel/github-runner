@@ -1,8 +1,10 @@
-name: hello
-on: push
+name: hello-world
+on: push 
 jobs:
-    my-jobs:
-       run-on: self-hosted
-       steps:
-          - name: uninstall apache server
-            run: yum remove apache2 -y
+  first:
+     runs-on: self-hosted 
+     steps:
+      - name: uinstall apache server
+        run: yum remove apahe2 -y
+      - name: completetly uninstall apache2 server
+        run: yum erase httpd httpd-tools apr apr-util
