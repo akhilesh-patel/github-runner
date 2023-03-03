@@ -9,8 +9,7 @@ jobs:
       - name: completetly uninstall apache2 server
         run: apr remove apache2 -y
         run:  sudo apt autoremove -y
-  second:
-     runs-on: self-hosted:
      steps:
         - name: install nginx server 
           run: apt install nginx -y  
+    
