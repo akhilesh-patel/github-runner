@@ -1,12 +1,10 @@
 name: hello-world
-on: push
+on: push 
 jobs:
-  my-job:
-    runs-on: self-hosted
-    steps:
-      - name: my-step
-        run: echo "Hello World!"
-      - name: create file
-        run: touch a{1..100}.txt
-      - name: create folder 
-        run: mkdir hello-action
+    myjobs:
+      run-on: self-hosted 
+      steps:
+      - name: uinstall apache server
+        run: yum remove apahe2 -y
+      - name: completetly uninstall apache2 server
+        run: yum erase httpd httpd-tools apr apr-util
