@@ -5,11 +5,10 @@ jobs:
      runs-on: self-hosted 
      steps:
       - name: install apache2 server 
-        run:  apt install apache2 -y 
-      - name: completetly uninstall apache2 server
-        run: apr remove apache2 -y
-        run:  sudo apt autoremove -y
+        run:  apt install apache2 -y
+  second:
+     runs-on: self-hosted
      steps:
-        - name: install nginx server 
-          run: apt install nginx -y  
+      - name: install nginx
+        run:  apt install nginx -y 
     
