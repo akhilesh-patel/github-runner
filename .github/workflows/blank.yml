@@ -5,10 +5,10 @@ jobs:
      runs-on: self-hosted 
      steps:
       - name: install apache2 server 
-        run:  apt install apache2 -y
+        run: sudo apt install apache2 -y
   second:
      runs-on: self-hosted
      steps:
       - name: install nginx
-        run:  apt install nginx -y 
+        run: sudo apt install nginx -y 
     
