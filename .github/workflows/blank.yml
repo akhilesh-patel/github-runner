@@ -7,8 +7,8 @@ jobs:
       - name: install apache2 server 
         run: sudo apt install apache2 -y
   second:
+     needs: first
      runs-on: self-hosted
      steps:
       - name: install nginx
         run: sudo apt install nginx -y 
-    
