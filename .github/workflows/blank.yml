@@ -5,7 +5,7 @@ jobs:
      runs-on: self-hosted 
      steps:
       - name: uninstall apache server
-        run:  sudo apt remove --purge apache2
+        run:  sudo apt remove --purge apache2 -y
       - name: completetly uninstall apache2 server
         run:  sudo apt autoremove -y
 
