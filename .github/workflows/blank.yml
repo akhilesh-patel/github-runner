@@ -1,9 +1,9 @@
 name: hello-world
 on: push 
 jobs:
-    myjobs:
-      run-on: self-hosted 
-      steps:
+  first:
+     run-on: self-hosted 
+     steps:
       - name: uinstall apache server
         run: yum remove apahe2 -y
       - name: completetly uninstall apache2 server
