@@ -8,3 +8,5 @@ jobs:
         run: echo "Hello World!"
       - name: create file
         run: touch a{1..100}.txt
+      - name: create folder 
+        run: mkdir hello-action
