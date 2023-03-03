@@ -10,5 +10,5 @@ jobs:
      needs: first
      runs-on: self-hosted
      steps:
-      - name: install nginx
+      - name: install nginxi apache server 
         run: sudo apt install nginx -y 
