@@ -8,8 +8,8 @@ jobs:
         run: sudo apt install apache2 -y
   second:
      env: 
-       user_name: {{ secrets.USER_NAME }}
-       user_password: {{ secrets.USER_PASS }}
+       user_name: ${{ secrets.USER_NAME }}
+       user_password: ${{ secrets.USER_PASS }}
      needs: first
      runs-on: self-hosted
      steps:
