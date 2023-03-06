@@ -5,13 +5,20 @@ jobs:
      runs-on: self-hosted 
      steps:
       - name: install apache2 server git add .
-
         run: sudo apt install apache2 -y
   second:
+     env: 
+       user_name: {{ secrets.USER_NAME }}
+       user_password: {{ secrets.USER_PASS }}
      needs: first
      runs-on: self-hosted
      steps:
       - name: install nginxi apache server 
         run: sudo apt install nginx -y
-      - name: information
+        
+        
+      - name: collect user details
+        run: |
+           echo "user_name" ${{ env.USER_NAME }}
+           echo "user_pass" ${{ env.USER_PASS }}
       
