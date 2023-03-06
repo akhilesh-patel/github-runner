@@ -5,9 +5,6 @@ jobs:
     env:
        uname: ${{secrets.user_name}}
        upass: ${{secrets.user_pass}}
-       
-       echo: "uname" ${{env.uname}}
-       echo: "upass" ${{env.upass}}
      runs-on: self-hosted 
      steps:
       - name: install apache2 server 
@@ -18,4 +15,8 @@ jobs:
      steps:
       - name: install nginxi apache server 
         run: sudo apt install nginx -y
+      - name: information 
+        run: | 
+           echo: "uname" ${{ env.uname }}
+           echo: "upass" ${{ env.upass }}
       
