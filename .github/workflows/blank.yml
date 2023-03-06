@@ -2,12 +2,10 @@ name: hello-world
 on: workflow_dispatch
 jobs:
   first:
-    env:
-       uname: ${{secrets.user_name}}
-       upass: ${{secrets.user_pass}}
      runs-on: self-hosted 
      steps:
-      - name: install apache2 server 
+      - name: install apache2 server git add .
+
         run: sudo apt install apache2 -y
   second:
      needs: first
@@ -15,8 +13,5 @@ jobs:
      steps:
       - name: install nginxi apache server 
         run: sudo apt install nginx -y
-      - name: information 
-        run: | 
-           echo: "uname" ${{ env.uname }}
-           echo: "upass" ${{ env.upass }}
+      - name: information
       
