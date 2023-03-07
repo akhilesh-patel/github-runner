@@ -67,3 +67,12 @@ Use cases describe the cause and effect of a function. It makes sure that the us
 22 How to change the MySQL password?
  ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword'
  
+ There are six separate kinds of manual QA testing: 
+
+Smoke  
+Functional  
+Integration  
+Regression 
+Exploratory 
+User Acceptance 
+ 
