@@ -1,0 +1,69 @@
+your self  & normal questions
+
+
+1 What is the difference between the QA and software testing?
+
+The role of QA (Quality Assurance) is to monitor the quality of the “process” used to produce the software. While the software testing, 
+is the process of ensuring the functionality of final product meets the user’s requirement.
+
+2 What is the difference between build and release?
+  Build: It is a number given to Installable software that is given to the testing team by the development team.
+
+Release: It is a number given to Installable software that is handed over to the customer by the tester or developer.
+
+3 how many types of testing 
+4 Mention the different types of software testing?
+Unit testing
+Integration testing and regression testing
+Shakeout testing
+Smoke testing
+Functional testing
+Performance testing
+White box and Black box testing
+Alpha and Beta testing
+Load testing and stress testing
+System testing
+
+5 .What is Test case?
+Test case is a specific condition to check against the Application Under Test. 
+It has information of test steps, prerequisites, test environment, and outputs.
+
+6 What are the tools used by a tester while testing?
+Selenium
+Firebug
+OpenSTA
+WinSCP
+YSlow for FireBug
+Web Developer toolbar for firebox
+
+7 what is bug 
+A bug is any kind of error, mistake or failure in software code that prevent the software function from executing properly. 
+
+8  What is the difference between Quality Assurance, Quality Control, and Quality Testing?
+9 What is a Use case?
+Use cases describe the cause and effect of a function. It makes sure that the user action and the system response are talking to each other properly. 
+
+
+10  what is the Role of the  QA Engineer
+
+11 Why is MySQL so popular? 
+   First of all, MySQL is open-source. Second, it is widely adopted, 
+     so a lot of code is already available. Even entire developed systems are there that can be referred to for the upcoming projects. MySQL has relational databases; hence it makes it have methodical storage rather than a big dump of unorganized mess. 
+    And finally, as said earlier, MySQL is quick and robust. 
+
+
+12  What is a foreign key
+13 What is MySQL workbench?
+14 What is CHAR and VARCHAR in MySQL?
+15 What do you mean by ‘databases’?
+16 How do you create a database in MySQL?
+17 How do you remove a column from a database?
+18 How to Delete Data From a MySQL Table?
+19  What is BLOB in MySQL?
+20 what is primary key in mysql 
+
+21  What is the difference between MySQL and SQL?
+
+22 How to change the MySQL password?
+ ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword'
+ 
